@@ -1,0 +1,12 @@
+{
+  "name": "coffeehouse2",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "sass:compile": "npx sass --watch src/sass:public"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}

@@ -242,10 +242,15 @@ html {
   background-color: #E1D4C9;
 }
 
+a {
+  color: #403F3D;
+}
+
 body {
   display: flex;
   flex-direction: column;
-  background: #000;
+  background: #E1D4C9;
+  padding: 2rem 0;
 }
 
 .container {
@@ -254,18 +259,6 @@ body {
   padding: 0 4rem;
   display: flex;
   flex-direction: column;
-}
-
-header {
-  background: red;
-}
-
-main {
-  background: green;
-}
-
-footer {
-  background: red;
 }
 
 .h1 {
@@ -315,6 +308,38 @@ footer {
   font-size: 3.2rem;
   font-weight: 600;
   line-height: 125%;
+}
+
+.header {
+  margin-bottom: 2rem;
+}
+.header__container {
+  flex-direction: row;
+  justify-content: space-between;
+  border: 1px dashed black;
+}
+.header__logo img {
+  max-width: 10rem;
+}
+.header__btn {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+}
+.header__btn img {
+  margin-bottom: 0.3rem;
+}
+
+.nav__list {
+  display: flex;
+  height: 100%;
+  align-items: center;
+}
+.nav__item:not(:last-child) {
+  margin-right: 4rem;
+}
+.nav__link {
+  font-size: #403F3D;
 }
 
 /*# sourceMappingURL=style.css.map */

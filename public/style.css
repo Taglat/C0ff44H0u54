@@ -239,7 +239,6 @@ a {
 
 html {
   font-size: 62.5%;
-  background-color: #E1D4C9;
 }
 
 a {
@@ -249,8 +248,8 @@ a {
 body {
   display: flex;
   flex-direction: column;
-  background: #E1D4C9;
   padding: 2rem 0;
+  background-color: #E1D4C9;
 }
 
 .container {
@@ -261,6 +260,71 @@ body {
   flex-direction: column;
 }
 
+.header {
+  margin-bottom: 2rem;
+}
+.header__container {
+  flex-direction: row;
+  justify-content: space-between;
+  border: 1px dashed black;
+}
+.header__logo img {
+  max-width: 10rem;
+}
+.header__btn {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+}
+.header__btn img {
+  margin-bottom: 0.3rem;
+}
+
+.nav__list {
+  display: flex;
+  height: 100%;
+  align-items: center;
+}
+.nav__item:not(:last-child) {
+  margin-right: 4rem;
+}
+.nav__link {
+  font-size: #403F3D;
+}
+
+.favorite-coffee {
+  position: relative;
+  border-radius: 4rem;
+  overflow: hidden;
+  padding: 10rem;
+  margin-bottom: 10rem;
+}
+.favorite-coffee__content {
+  color: #E1D4C9;
+  display: flex;
+  flex-direction: column;
+  max-width: 53rem;
+  gap: 4rem;
+}
+.favorite-coffee__button {
+  width: fit-content;
+  padding: 2rem 7.8rem;
+  background: #E1D4C9;
+  border-radius: 100px;
+  color: #403F3D;
+  border: 0;
+}
+
+.bg-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  object-fit: cover;
+}
+
 .h1 {
   font-size: 7.2rem;
   font-weight: 600;
@@ -268,6 +332,7 @@ body {
 }
 .h1_accent {
   font-style: italic;
+  color: #B0907A;
 }
 
 .h2 {
@@ -308,38 +373,6 @@ body {
   font-size: 3.2rem;
   font-weight: 600;
   line-height: 125%;
-}
-
-.header {
-  margin-bottom: 2rem;
-}
-.header__container {
-  flex-direction: row;
-  justify-content: space-between;
-  border: 1px dashed black;
-}
-.header__logo img {
-  max-width: 10rem;
-}
-.header__btn {
-  display: flex;
-  align-items: center;
-  gap: 0.8rem;
-}
-.header__btn img {
-  margin-bottom: 0.3rem;
-}
-
-.nav__list {
-  display: flex;
-  height: 100%;
-  align-items: center;
-}
-.nav__item:not(:last-child) {
-  margin-right: 4rem;
-}
-.nav__link {
-  font-size: #403F3D;
 }
 
 /*# sourceMappingURL=style.css.map */
